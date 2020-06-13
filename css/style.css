@@ -37,17 +37,17 @@ box-sizing: border-box;
     clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%);
 }
 
-.logo-box{
+.header__logo-box{
 position: absolute;
 top: 4rem;
 left: 4rem;
 }
 
-.logo{
+.header__logo{
 height: 3.5rem;
 }
 
-.text-box{
+.header__text-box{
     position: absolute;
     top: 40%;
     left: 50%;
@@ -61,7 +61,7 @@ backface-visibility: hidden; /*to fix the shaking at the end of the animation*/
 margin-bottom: 6rem ;
 }
 
-.heading-primary-main{
+.heading-primary--main{
 display: block;
 font-size: 6rem;
 font-weight: 400;
@@ -75,7 +75,7 @@ animation-timing-function: ease-out;
 animation-iteration-count: 3; repeat animation 3 times*/ 
 }
 
-.heading-primary-sub{
+.heading-primary--sub{
 display: block;
 font-size: 2rem;
 font-weight: 700;
@@ -144,7 +144,7 @@ animation: moveInRight 1s ease-out; /*shorter line compared to primary main, all
     box-shadow: 0 .5rem 1rem rbga(0,0,0,.2);
 }
 
-.btn-white{
+.btn--white{
     background-color: white;
     color: #777;
 }
@@ -170,7 +170,7 @@ animation: moveInRight 1s ease-out; /*shorter line compared to primary main, all
     opacity: 0;
 }
 
-.btn-animated{
+.btn--animated{
     animation: moveInBottom 500ms ease-out .75s;
     animation-fill-mode:backwards ; /* this set the 0% value of the animation before it starts, otherwise the button would be visible on load before the animation starts*/
 }
