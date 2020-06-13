@@ -5,14 +5,15 @@ Medium green: #55c57a
 Dark green: #28b485
 */
 
-*{
+*, *:after, *::before{
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
+    box-sizing: inherit; /*we say to all elements in the page to inherit the body box sizing*/
 }
 
 html{
-    font-size: 10px;
+    font-size: 62.5%; /*10/16= 62.5%  16 is the default browser font-size in px.... we set this to % to not block the user ability 
+                        to change browser font-size*/
 }
 
 body{
@@ -22,6 +23,8 @@ font-weight: 400;
 line-height: 1.7;
 color: #777;
 padding: 3rem;
+box-sizing: border-box;
+
 }
 
 .header{
