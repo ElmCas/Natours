@@ -53,29 +53,29 @@
     animation: moveInBottom 500ms ease-out 0.75s;
     animation-fill-mode: backwards; /* this set the 0% value of the animation before it starts, otherwise the button would be visible on load before the animation starts*/
   }
-}
 
-.btn-text {
-  &:link,
-  &:visited {
-    font-size: $default-font-size;
-    color: $color-primary;
-    display: inline-block;
-    text-decoration: none;
-    border-bottom: 0.1rem solid $color-primary;
-    padding: 0.3rem;
-    transition: all 0.2s;
-  }
+  &-text {
+    &:link,
+    &:visited {
+      font-size: $default-font-size;
+      color: $color-primary;
+      display: inline-block;
+      text-decoration: none;
+      border-bottom: 0.1rem solid $color-primary;
+      padding: 0.3rem;
+      transition: all 0.2s;
+    }
 
-  &:hover {
-    background-color: $color-primary;
-    color: $color-white;
-    box-shadow: 0 1rem 2rem rgba($color-black, 0.15);
-    transform: translateY(-0.2rem);
-  }
+    &:hover {
+      background-color: $color-primary;
+      color: $color-white;
+      box-shadow: 0 1rem 2rem rgba($color-black, 0.15);
+      transform: translateY(-0.2rem);
+    }
 
-  &:active {
-    box-shadow: 0 1rem 1rem rgba($color-black, 0.15);
-    transform: translateY(0);
+    &:active {
+      box-shadow: 0 1rem 1rem rgba($color-black, 0.15);
+      transform: translateY(0);
+    }
   }
 }
