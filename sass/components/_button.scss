@@ -23,6 +23,10 @@
     transform: translateY(-1px);
     box-shadow: 0 0.5rem 1rem rbga($color-black, 0.2);
   }
+  &--green {
+    background-color: $color-primary;
+    color: $color-white;
+  }
 
   &--white {
     background-color: $color-white;
