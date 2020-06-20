@@ -1,0 +1,8 @@
+@mixin clearFix {
+  /* to fix the height of the float columns */
+  &::after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+}
