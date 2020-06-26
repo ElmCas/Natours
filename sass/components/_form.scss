@@ -78,15 +78,17 @@
     padding-right: 2rem;
 
     &::after {
+      @include absCenter;
       content: "";
       display: block;
       height: 1.3rem;
       width: 1.3rem;
       border-radius: 50%;
-      position: absolute; /*to set it in the middle of the other circle*/
-      top: 50%; /*to set it in the middle of the other circle*/
-      left: 50%; /*to set it in the middle of the other circle*/
-      transform: translate(-50%, -50%); /*to set it in the middle of the other circle*/
+      //*******replaced by mixin*******
+      // position: absolute; /*to set it in the middle of the other circle*/
+      // top: 50%; /*to set it in the middle of the other circle*/
+      // left: 50%; /*to set it in the middle of the other circle*/
+      //transform: translate(-50%, -50%); /*to set it in the middle of the other circle*/
       /*parent has to has a display set no matter if its absolute as happens with __radio-button*/
       background-color: $color-primary;
       opacity: 0;
