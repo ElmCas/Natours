@@ -10,6 +10,20 @@ html {
   //this define what 1rem is
   font-size: 62.5%; /*10/16= 62.5%  16 is the default browser font-size in px.... we set this to % to not block the user ability 
                         to change browser font-size*/
+
+  //WE SET THE MEDIA FROM BIGGER TO SMALL TO AVOID CONFLICTING MEDIA QUERIES OVERRIDING THE OTHER ONE
+  @include respond(big-dektop) {
+    //1rem = 12px, 12/16 = 75%.
+    font-size: 75%;
+  }
+  @include respond(tab-land) {
+    // we want that 1rem = 9px(not 16 as set by default by browser) so 9/16 = 56.25%.
+    font-size: 56.25%;
+  }
+  @include respond(tab-port) {
+    // we want that 1rem = 8px(not 16 as set by default by browser) so 8/16 = 50%.
+    font-size: 50%;
+  }
 }
 body {
   box-sizing: border-box;
